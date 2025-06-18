@@ -1,4 +1,4 @@
-#Luminous - AI-Based Wallpaper Creation Tool
+# Luminous - AI-Based Wallpaper Creation Tool
 Luminous is a project that allows users to create unique wallpapers using artificial intelligence. Users can describe how they want their wallpaper to look by choosing colors, styles, and moods, and the system will generate a custom wallpaper based on that input.
 
 Project Goal
