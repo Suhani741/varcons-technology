@@ -1,67 +1,84 @@
 # Luminous - AI-Based Wallpaper Creation Tool
-Luminous is a project that allows users to create unique wallpapers using artificial intelligence. Users can describe how they want their wallpaper to look by choosing colors, styles, and moods, and the system will generate a custom wallpaper based on that input.
 
-Project Goal
-The main goal of this project is to build a tool that creates beautiful wallpapers by understanding what the user wants. It uses smart technology to turn text-based descriptions into images.
+Luminous is a web application that allows users to create unique wallpapers using artificial intelligence. Users can describe their desired wallpaper by choosing colors, styles, and moods, and the system generates a custom wallpaper based on that input.
 
-Key Features
-1. Color Selection
-Uses the VIBGYOR colors (Violet, Indigo, Blue, Green, Yellow, Orange, Red).
+## Features
 
-Each color is carefully picked to match different moods and designs.
+- **Color Selection:** Choose from VIBGYOR colors (Violet, Indigo, Blue, Green, Yellow, Orange, Red) to match different moods and designs.
+- **Style & Mood:** Select design styles (e.g., abstract, nature) and moods (e.g., calm, energetic).
+- **Text Description:** Add a short description to further customize the wallpaper.
+- **Wallpaper Preview:** See a sample preview before downloading.
+- **Easy-to-Use Interface:** Responsive design for desktop and mobile.
+- **AI Image Generation (Pluggable):** The backend is ready for integration with AI models for image generation.
 
-Supports smooth blending and matching of colors.
+> **Note:** The current version uses placeholder images for previews and downloads. Integration with actual AI image generation is planned.
 
-2. Image Collection
-Collected over 5,000 images from free image sites like Unsplash and Pexels.
+## Installation
 
-Images include nature scenes, abstract patterns, and colorful designs.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/luminous.git
+   cd luminous
+   ```
 
-Images are edited (rotated, flipped, etc.) to improve variety.
+2. **Create and activate a virtual environment (optional but recommended):**
+   ```sh
+   python -m venv venv
+   venv\Scripts\activate   # On Windows
+   # source venv/bin/activate   # On macOS/Linux
+   ```
 
-3. AI Image Generation
-The project uses AI models to generate new images based on training.
+3. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-Models are trained to understand color, shapes, and style preferences.
+## Usage
 
-AI tries to create wallpapers that match the user’s description.
+1. **Start the server:**
+   ```sh
+   python app/main.py
+   ```
+   Or with Uvicorn:
+   ```sh
+   uvicorn app.main:app --reload
+   ```
 
-4. User Input
-Users can select:
+2. **Open your browser and go to:**
+   ```
+   http://localhost:8000
+   ```
 
-A main color (like green, red, blue)
+3. **Generate wallpapers:**
+   - Fill out the form with your preferred color, style, mood, and description.
+   - Submit to start wallpaper generation.
+   - Preview and download your custom wallpaper.
 
-A design style (like abstract or nature)
+## Project Structure
 
-A mood (like calm or energetic)
+```
+Wallpaper/
+├── app/
+│   ├── main.py
+│   ├── static/
+│   └── templates/
+├── requirements.txt
+└── README.md
+```
 
-They can also type a short description like:
+## Requirements
 
-"A calm green wallpaper with soft shapes"
+See [`requirements.txt`](requirements.txt) for all dependencies.
 
-"Energetic red pattern with bold design"
+## Customization & AI Integration
 
-5. Wallpaper Preview
-Users can see a sample (preview) of the wallpaper before downloading.
+- The backend is structured to support AI-based image generation.
+- To integrate your own AI model, replace the placeholder image generation logic in `app/main.py` with your model inference code.
 
-They can make changes to the design if needed.
+## License
 
-6. Easy-to-Use Interface
-The tool works on computers and mobile phones.
+This project is licensed under the MIT License.
 
-Simple step-by-step layout guides users through the process.
+---
 
-No need for technical knowledge to use the tool.
-
-7. Testing and Feedback
-Tested with different users to check how well the tool understands input.
-
-Improved based on feedback to make it more accurate and user-friendly.
-
-8. Final Deployment
-The tool can be used online through a web browser.
-
-Can also be made available as a mobile app in the future.
-
-Conclusion
-Luminous makes it easy for anyone to create beautiful, custom wallpapers using just a few words. It brings together color, mood, and creativity in one simple tool.
+**Luminous** makes it easy for anyone to create beautiful, custom wallpapers using just a few words. It brings together color, mood, and creativity
