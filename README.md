@@ -75,10 +75,6 @@ See [`requirements.txt`](requirements.txt) for all dependencies.
 - The backend is structured to support AI-based image generation.
 - To integrate your own AI model, replace the placeholder image generation logic in `app/main.py` with your model inference code.
 
-## License
 
-This project is licensed under the MIT License.
-
----
 
 **Luminous** makes it easy for anyone to create beautiful, custom wallpapers using just a few words. It brings together color, mood, and creativity
